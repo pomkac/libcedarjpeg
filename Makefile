@@ -2,6 +2,7 @@ include config.mk
 
 CFLAGS += -g -MD -MP -MQ $@
 MAKEFLAGS += -rR --no-print-directory
+CFLAGS += -Iinclude
 
 OBJ = $(addsuffix .o,$(basename $(SRC)))
 
